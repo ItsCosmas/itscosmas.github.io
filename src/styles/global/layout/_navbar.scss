@@ -1,0 +1,40 @@
+.navbar {
+    border-top: 8px solid #4497E2;
+    height: 7rem;
+    font-size: 1.4rem;
+    background: transparent;
+    border-bottom: #f4f2f2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-name {
+    
+    height: 3.25rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-left: 2rem;
+    }
+
+    &__items{
+    
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+
+        &>* {
+            padding: 0 2rem;
+            cursor: pointer;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+        }
+
+        &>*:hover {
+            background-color: #263238;
+        }
+    }
+    
+}
