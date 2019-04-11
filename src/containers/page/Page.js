@@ -6,9 +6,6 @@ class Page extends React.Component {
         return (
             <React.Fragment>
                 <Header />
-                <div>
-                    This is the Page Grid
-                </div>
             </React.Fragment>
         )
     }
