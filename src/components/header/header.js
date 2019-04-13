@@ -19,11 +19,13 @@ const header = (props) => {
             </div>
 
             <div className="header">
-                <Typed />
-                <Social />
+                <div className="header__intro-box">
+                    <Typed />
+                    <Social />
 
-                <div className="header__actions">
-                    {/* <ContactButtons /> */}
+                    <div className="header__actions">
+                        {/* <ContactButtons /> */}
+                    </div>
                 </div>
             </div>
         </React.Fragment>
