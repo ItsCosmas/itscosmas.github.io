@@ -21,7 +21,7 @@ class SocialButtons extends React.Component {
                     <i className="fas fa-at"></i>
                     <span>Email</span>
                 </a>
-                <a href={`https://s3.amazonaws.com/raymond-jay-portfolio/johnson_raymond_resume.pdf`} className={`action`} target={`_blank`}>
+                <a href={`#`} className={`action`} target={`_blank`}>
                     <i className="fas fa-newspaper"></i>
                     <span>Resume</span>
                 </a>
