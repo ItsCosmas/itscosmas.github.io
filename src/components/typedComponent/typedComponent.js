@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 const typed = (props) => {
     return (
-        <div className="header__intro-box">
+        <div>
             <h1 className="heading-primary">
                 <Typed
                     strings={['Hi, I\'m Cozy 👽']}
