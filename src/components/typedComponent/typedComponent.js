@@ -6,13 +6,17 @@ const typed = (props) => {
         <div>
             <h1 className="heading-primary">
                 <Typed
-                    strings={['Hi, I\'m Cozy 👽']}
-                    typeSpeed={30}
+                    strings={['Hi👋🏾, I\'m Cozy 👽']}
+                    typeSpeed={20}
                     className="heading-primary--main"
                 />
                 <br />
 
-                <Typed
+                <span className="heading-primary--sub">
+                    Full-Stack Dev | Science & Tech | Smooth Operator
+                </span>
+
+                {/* <Typed
                     strings={['I\'m a full-stack developer',
                         'I do full-stack JS',
                         'I do Python Backends']}
@@ -20,7 +24,7 @@ const typed = (props) => {
                     backSpeed={80}
                     className="heading-primary--sub"
                     loop >
-                </Typed>
+                </Typed> */}
             </h1>
 
         </div>
