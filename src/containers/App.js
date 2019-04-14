@@ -23,7 +23,7 @@ class Page extends React.Component {
                     </div>
                     <Route exact path="/" component={Header} />
                     <Route path="/stack" component={Technologies} />
-                    <Route exact path="/projects" component={Projects} />
+                    <Route path="/projects" component={Projects} />
                     <Route path="/contact" component={Contact} />
                 </React.Fragment>
             </HashRouter>
