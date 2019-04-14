@@ -22,7 +22,7 @@ class SocialButtons extends React.Component {
                         <i className="fas fa-at"></i>
                         <span>Email</span>
                     </a>
-                    <a href={`#`} className={`icons__social-item`} target={`_blank`}>
+                    <a href={`https://drive.google.com/file/d/1BU4iuL-txtj4GdldykoBkFBiAoBt_XuJ/view?usp=sharing`} className={`icons__social-item`} target={`_blank`}>
                         <i className="fas fa-newspaper"></i>
                         <span>Resume</span>
                     </a>
