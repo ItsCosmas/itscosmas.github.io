@@ -1,11 +1,5 @@
 @import './global/_main.scss';
 
-@mixin ResetLink(){
-    color: inherit;
-    text-decoration: none;
-}
-
-
 .icons__social {
     display: flex;
     justify-content: center;
