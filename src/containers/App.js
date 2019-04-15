@@ -1,23 +1,24 @@
 import React from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import Header from '../components/header/header';
 import '../styles/index.scss';
 
-class Page extends React.Component {
+class App extends React.Component {
     render() {
         return (
-            <HashRouter basename="/">
+            <BrowserRouter basename='/'>
                 <React.Fragment>
                     <div className="navbar">
                         <div className="navbar__logo-name">Cozy</div>
 
                         <nav className="navbar__items">
 
-                            <div><Link to="/" className="navbar__items-link">Home</Link></div>
-                            <div><Link to="/stack" className="navbar__items-link">Technologies</Link></div>
-                            <div><Link to="/projects" className="navbar__items-link">Projects</Link></div>
-                            <div><Link to="/contact" className="navbar__items-link">Contact</Link></div>
-
+                            <ul className="navbar__items-links">
+                                <li><Link to="/" className="navbar__items-link">Home</Link></li>
+                                <li><Link to="/stack" className="navbar__items-link">Technologies</Link></li>
+                                <li><Link to="/projects" className="navbar__items-link">Projects</Link></li>
+                                <li><Link to="/contact" className="navbar__items-link">Contact</Link></li>
+                            </ul>
 
                         </nav>
                     </div>
@@ -26,7 +27,7 @@ class Page extends React.Component {
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact" component={Contact} />
                 </React.Fragment>
-            </HashRouter>
+            </BrowserRouter>
 
         )
     }
@@ -35,4 +36,4 @@ const Technologies = () => <div><h2>My Tech Stack</h2></div>
 const Projects = () => <div><h2>My Projects</h2></div>
 const Contact = () => <div><h2>My Contact Form</h2></div>
 
-export default Page;
+export default App;
