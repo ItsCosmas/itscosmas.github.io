@@ -30,19 +30,24 @@
     transition: 150ms ease-in-out;
     transform: translateY(0);
 
-    &:hover{
-        transform: translateY(-1rem);
+        &:hover{
+            transform: translateY(-1rem);
+        }
+
+        i {
+            font-size: 3rem;
+        }
+
+        span {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
     }
 
-    i {
-        font-size: 3rem;
-    }
-
-    span {
-        margin-top: 1rem;
-        font-size: 1.8rem;
-        font-weight: 300;
-    }
 }
 
-}
+// .content {
+//   background-color: #FFF;
+//   padding: 20px;
+// }
