@@ -13,7 +13,7 @@ const typed = (props) => {
                 <br />
 
                 <span className="heading-primary--sub">
-                    Full-Stack Dev | Deep Learning | Smooth Operator
+                    Full-Stack Developer | Machine Learning Eng.
                 </span>
 
                 {/* <Typed
