@@ -1,5 +1,6 @@
 import React from 'react';
 import cnn from '../../assets/images/convnet.png';
+import crud from '../../assets/images/CRUD.JPG'
 import detectedPic from '../../assets/images/detected.JPG';
 
 const projects = (props) => {
@@ -8,7 +9,7 @@ const projects = (props) => {
             {/* /////////////////////////////////////////////////////////////////////////////////////////////////////////
             /////////////////////////PROJECT 1 //////////////////////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-            <div className="row">
+            <div className="row box-style">
                 <div className="project-box__banner">
                     <img src={cnn} alt="convnet" />
                     <div className="project-box__banner-links">
@@ -28,9 +29,9 @@ const projects = (props) => {
             {/* /////////////////////////////////////////////////////////////////////////////////////////////////////////
             /////////////////////////PROJECT 2 //////////////////////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-            <div className="row">
+            <div className="row box-style">
                 <div className="project-box__banner">
-                    <img src={cnn} alt="convnet" />
+                    <img src={crud} alt="convnet" />
                     <div className="project-box__banner-links">
                         <a href={`kaw`} className={`link link--inactive`}><i className="fas fa-desktop"></i><span>Live</span></a>
                         <a href={`https://github.com/ItsCosmas/PHP-CRUD-app`} className={`link`}><i className="fas fa-code-branch"></i><span>Source</span></a>
@@ -48,7 +49,7 @@ const projects = (props) => {
             {/* /////////////////////////////////////////////////////////////////////////////////////////////////////////
             /////////////////////////PROJECT 3 //////////////////////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-            <div className="row">
+            <div className="row box-style">
                 <div className="project-box__banner">
                     <img src={detectedPic} alt="convnet" />
                     <div className="project-box__banner-links">
@@ -61,25 +62,6 @@ const projects = (props) => {
                     <p>
                         A simple code sinpet leveraging the use of pretrained Haar Cascades to identify features in images. In my case I experimented with
                         the Open CV Haar Cascade classifiers to detect faces in a photograph.
-                    </p>
-                </div>
-            </div>
-            {/* /////////////////////////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////PROJECT 4 //////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-            <div className="row">
-                <div className="project-box__banner">
-                    <img src={cnn} alt="convnet" />
-                    <div className="project-box__banner-links">
-                        <a href={`kaw`} className={`link link--inactive`}><i className="fas fa-desktop"></i><span>Live</span></a>
-                        <a href={`hg`} className={`link`}><i className="fas fa-code-branch"></i><span>Source</span></a>
-                    </div>
-                </div>
-                <div className="project-box__desc">
-                    <h3>NODE JS RESTFUL API</h3>
-                    <p>
-                        API end points with full CRUD(Create, Read, Update, Delete) functionality and Token Authentication coupled in.
-                        It was a nice challenge to familiarize myself with Node JS key functionality.
                     </p>
                 </div>
             </div>
