@@ -11,7 +11,7 @@ class App extends React.Component {
             <Router basename='/'>
                 <React.Fragment>
                     <div className="navbar">
-                        <div className="navbar__logo-name">Cozy</div>
+                        <div className="navbar__logo-name"><Link to="/" className="navbar__logo-link">Cozy</Link></div>
 
                         <nav className="navbar__items">
 
