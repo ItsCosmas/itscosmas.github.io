@@ -1,0 +1,120 @@
+@mixin ResetLink(){
+    color: inherit;
+    text-decoration: none;
+}
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin skill($tech) {
+    @if $tech == py {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 90%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == js {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 90%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == java {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 60%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == php {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 60%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == react {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 85%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == node {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 75%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == flask {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 75%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == css {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 80%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == tf {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 65%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == keras {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 65%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == torch {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 35%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == git {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 90%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == heroku {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 70%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == noSql {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 75%;
+        background-color: #ff8a00;
+        }
+    }
+    @if $tech == sql {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 70%;
+        background-color: #ff8a00;
+        }
+    }
+}

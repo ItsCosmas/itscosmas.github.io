@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     background-color: $color-primary;
@@ -35,8 +35,8 @@ body {
 
     &--sub {
         display: block;
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: 1.8rem;
+        font-weight: 700;
         letter-spacing: 0.2rem;
         line-height: 2.5rem;
     
@@ -71,5 +71,15 @@ body {
     font-size: $default-font-size;
     &:not(:last-child){
         margin-bottom: 3rem;
+    }
+}
+.link{
+    
+    &--bold{
+        font-weight: 500;
+    }
+    &--inactive{
+        pointer-events: none;
+        color: rgba($color-primary, .5);
     }
 }
