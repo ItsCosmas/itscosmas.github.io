@@ -8,10 +8,7 @@ const header = (props) => {
             <div className="header">
                 <div className="header__intro-box">
                     <Typed />
-
-                    <div className="header__social">
-                        <Social />
-                    </div>
+                    <Social />
                 </div>
             </div>
         </React.Fragment>
