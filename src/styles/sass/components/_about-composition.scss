@@ -1,19 +1,16 @@
-.about {
-    padding: 2rem 2rem;
-    margin: 0 10rem;
-    
-
-    &__desc {
-        margin-left: -10rem;
-         p {
-            font-size: 1.4rem;
-         }
-    }
-}
 .composition {
     position: relative;
 
+        @include respond(tab-port){
+            margin-top: 2rem;
+            margin-left: auto;
+        }
+
     &-photo {
+
+        @include respond(tab-port){
+            margin-left: 10rem;
+        }
 
         &:hover &__caption {
             opacity: 1;
@@ -37,6 +34,11 @@
         //transform: translateX(-3rem);
         position: relative;
 
+        @include respond(tab-port){
+            margin-top: 1rem;
+            width: 60%;
+        }
+
             @supports (clip-path: polygon(0 0) or (-webkit-clip-path: polygon(0 0))) {
                 -webkit-clip-path: circle(50% at 50% 50%);
                 clip-path: circle(50% at 50% 50%);
@@ -51,11 +53,22 @@
         transform: translateX(1rem) translateY(-4rem) scale(1.25);
         backface-visibility: hidden;
         transition: all .5s;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, .7);
         border-radius: 2px;
         z-index: 10;
         transition: all .2s;
         outline-offset: 2rem;
+
+
+        @include respond(tab-port){
+            transform: translateX(1rem) translateY(-0.7rem) scale(1.25);
+        }
+        
+        @include respond(phone){
+            transform: translateX(0.1rem) translateY(4.2rem) scale(2);
+        }
+
+
         }
 
         &__caption {
@@ -72,29 +85,6 @@
             backface-visibility: hidden;
         }
     }
-
-    // &__photo {
-    //     width: 45%;
-    //     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-    //     border-radius: 2px;
-    //     //position: absolute;
-    //     z-index: 10;
-    //     transition: all .2s;
-    //     outline-offset: 2rem;
-    //     left: 20%;
-    //     top: 2rem;
-       
-    //     // &:hover{
-    //     //     // outline: 1.5rem solid $color-primary;
-    //     //     transform: scale(1.05) translateY(-.5rem);
-    //     //     box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-    //     //     z-index: 20;
-    //     // }
-    // }
-
-    // &:hover &__photo:not(:hover){
-    //     transform: scale(.95);
-    // }
 
     &__text{
         font-size: $default-font-size;

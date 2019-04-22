@@ -1,0 +1,10 @@
+.projects {
+    position: relative;
+    padding: 2rem 2rem;
+    margin: 0 10rem;
+
+    @include respond(tab-port){
+        padding: 0rem;
+        margin: 0 3rem; 
+    }
+}

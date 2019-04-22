@@ -8,6 +8,12 @@
     font-size: $default-font-size;
     padding: 1.5rem;
 
+    @include respond(tab-port){
+        padding: 2rem;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
         img {
             width: 100%;
             height: auto;
@@ -18,9 +24,24 @@
             padding: 0.5rem;
             text-decoration: none;
             color: $color-white;
+
+            @include respond(tab-port){
+                padding: 1rem;  
+            }
+
         }
         span {
             padding: 1.5rem;
+            @include respond(tab-port){
+                padding: auto;  
+            }
+        }
+
+        &-links{
+            @include respond(tab-port){
+                // margin-left: 12rem; 
+                margin: auto; 
+            }
         }
     }
     &__desc {
@@ -29,11 +50,15 @@
         float: right;
         margin-top: -0.5rem;
         font-size: $default-font-size;
+
+        @include respond(tab-port){
+            padding: auto;
+            width: 100%;
+        }
     }
 }
 
 .box-style {
-    // background-color: olivedrab;
-    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    box-shadow: 0 3rem 6rem rgba($color-primary-dark, .7);
     
 }

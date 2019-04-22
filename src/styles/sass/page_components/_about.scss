@@ -1,0 +1,17 @@
+.about {
+    padding: 2rem 2rem;
+    margin: 0 10rem;
+    
+
+    &__desc {
+        margin-left: -10rem;
+         p {
+            font-size: $default-font-size;
+         }
+
+        @include respond(tab-port){
+            margin-top: 5rem;
+            margin-left: auto;
+        }
+    }
+}

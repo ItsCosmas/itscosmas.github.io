@@ -30,6 +30,10 @@
     font-size: 2.5rem;
     font-weight: 800;
     margin-left: 2rem;
+
+        @include respond(tab-port){
+            margin-left: 4rem;
+        }
     }
 
     &__items{
@@ -38,11 +42,13 @@
         display: flex;
         align-items: center;
 
+        @include respond(tab-port){
+            margin-right: 4rem;
+        }
+
         &-links{
             display: flex;
-            list-style: none;
-
-            
+            list-style: none;   
 
             li{
                 &:not(:last-child){
@@ -67,6 +73,10 @@
 
             display: flex;
             align-items: center;
+
+            @include respond(tab-port){
+                padding: 0 0.5rem;
+            }
         }
     }
     

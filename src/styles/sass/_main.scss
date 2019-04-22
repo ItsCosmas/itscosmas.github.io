@@ -5,14 +5,17 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/about-composition';
 @import 'components/projectbox';
 @import 'components/skills';
+@import 'components/social-buttons';
 
-@import 'layout/about';
 @import 'layout/grid';
-@import 'layout/header';
-@import 'layout/navbar';
-@import 'layout/projects';
+
+@import 'page_components/about';
+@import 'page_components/header';
+@import 'page_components/navbar';
+@import 'page_components/projects';
 
 @import 'normalize';
 
