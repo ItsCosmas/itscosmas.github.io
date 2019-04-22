@@ -3,6 +3,10 @@
     position: relative;
     padding: 10rem;
 
+    @include respond(phone){
+        padding: 8rem;
+    }
+
     &__intro-box {
     position: absolute;
     top: 100%;
@@ -18,10 +22,22 @@
         grid-row-gap: 3rem;
         width: 100%;
         justify-content: center;
-        margin-top: 8rem;     
+        margin-top: 8rem;
+
+        @include respond(phone){
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 1.5rem;
+            margin-top: 5rem;
+        }
+        
+        
     }
 }
 
 .header__container {
     padding: 3rem;
+
+    @include respond(phone){
+        padding: 1.5rem;
+    }
 }

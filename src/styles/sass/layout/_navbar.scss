@@ -9,6 +9,14 @@
     justify-content: space-between;
     align-items: center;
 
+    @include respond(tab-port) {
+       font-size: 1.2rem;
+    }
+
+    @include respond(phone) {
+        font-size: 1.0rem;
+    }
+
     &__logo-link {
         text-decoration: none;
         cursor: pointer;
