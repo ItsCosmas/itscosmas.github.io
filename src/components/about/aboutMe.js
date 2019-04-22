@@ -1,8 +1,6 @@
 import React from 'react';
 import cozy from '../../assets/images/cozy.JPG'
 
-import './about.scss';
-
 import SkillBar from '../skillProgress/skillProgress';
 
 const about = (props) => {
