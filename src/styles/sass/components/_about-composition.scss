@@ -6,10 +6,15 @@
             margin-left: auto;
         }
 
+
     &-photo {
 
         @include respond(tab-port){
             margin-left: 10rem;
+        }
+
+        @include respond(phone){
+            margin-left: 2rem;
         }
 
         &:hover &__caption {
@@ -65,8 +70,12 @@
         }
         
         @include respond(phone){
-            transform: translateX(0.1rem) translateY(4.2rem) scale(2);
+            transform: translateX(0.15rem) translateY(3.5rem) scale(1.8);
         }
+
+        // @media only screenand (max-width: 37.5em) { // 600px
+        //     transform: translateX(0.1rem) translateY(4.2rem) scale(2);
+        // }
 
 
         }
