@@ -120,6 +120,13 @@ ORDER: base + typography > general layout + grid > page components > components
         background-color: #ff8a00;
         }
     }
+    @if $tech == django {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 90%;
+        background-color: #ff8a00;
+        }
+    }
     @if $tech == css {
         .progress-bar{
         animation: progressAnimation 3s;

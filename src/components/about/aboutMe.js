@@ -51,6 +51,7 @@ const about = (props) => {
                         <SkillBar lan="React" tag="react" />
                         <SkillBar lan="Node JS" tag="node" />
                         <SkillBar lan="Flask" tag="flask" />
+                        <SkillBar lan="Django" tag="django" />
                         <SkillBar lan="CSS/Sass" tag="css" />
                     </div>
                     {/* //////////////////////////////////////////////////////////////////////// */}
