@@ -106,6 +106,13 @@ ORDER: base + typography > general layout + grid > page components > components
         background-color: #ff8a00;
         }
     }
+    @if $tech == django {
+        .progress-bar{
+        animation: progressAnimation 3s;
+        width: 85%;
+        background-color: #ff8a00;
+        }
+    }
     @if $tech == node {
         .progress-bar{
         animation: progressAnimation 3s;
@@ -117,13 +124,6 @@ ORDER: base + typography > general layout + grid > page components > components
         .progress-bar{
         animation: progressAnimation 3s;
         width: 75%;
-        background-color: #ff8a00;
-        }
-    }
-    @if $tech == django {
-        .progress-bar{
-        animation: progressAnimation 3s;
-        width: 90%;
         background-color: #ff8a00;
         }
     }

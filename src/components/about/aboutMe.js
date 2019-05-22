@@ -48,10 +48,10 @@ const about = (props) => {
                     {/* ////////////////////////////////////////////////////////////////////// */}
                     <div className="col-1-of-4">
                         <h3 className="u-margin-bottom-small">Web Stack & Frameworks</h3>
+                        <SkillBar lan="Django" tag="django" />
                         <SkillBar lan="React" tag="react" />
                         <SkillBar lan="Node JS" tag="node" />
                         <SkillBar lan="Flask" tag="flask" />
-                        <SkillBar lan="Django" tag="django" />
                         <SkillBar lan="CSS/Sass" tag="css" />
                     </div>
                     {/* //////////////////////////////////////////////////////////////////////// */}

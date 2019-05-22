@@ -42,6 +42,9 @@
   .flask {
     @include skill(flask)
   }
+  .django {
+    @include skill(django)
+  }
   .css {
     @include skill(css)
   }
